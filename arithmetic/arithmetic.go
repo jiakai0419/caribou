@@ -5,6 +5,7 @@ const (
 	LOWER_BOUND_I64 = -9223372036854775808 // - 2^63
 )
 
+// ----------  int64  ---------- //
 func MaxI64(a, b int64) int64 {
 	if a > b {
 		return a
@@ -37,4 +38,19 @@ func MinI64S(nums ...int64) int64 {
 		}
 	}
 	return mn
+}
+
+// ----------  int  ---------- //
+func MaxI(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func MinI(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
