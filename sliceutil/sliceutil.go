@@ -1,7 +1,7 @@
 package sliceutil
 
 func SplitN(s []int64, n int) [][]int64 {
-	l := len(s)/n
+	l := len(s) / n
 	if len(s)%n != 0 {
 		l++
 	}
@@ -9,7 +9,7 @@ func SplitN(s []int64, n int) [][]int64 {
 	row := 0
 	count := 0
 	for _, v := range s {
-		if count!= 0 && count % n == 0 {
+		if count != 0 && count%n == 0 {
 			row++
 			count = 0
 		}
